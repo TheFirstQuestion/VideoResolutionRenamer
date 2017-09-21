@@ -18,11 +18,13 @@ See in Sonarr: Settings -> Media Management -> Episode Naming (show advanced set
 
 1. Clone the repository
 
-1. Create blank files `newNames.txt` and `currentNames.txt`
+2. Create blank files `newNames.txt` and `currentNames.txt`
 
-2. `./listFiles.sh /path/to/your/shows`
+3. `./listFiles.sh /path/to/your/shows`
 
-3. `./videoResolutionRename.sh /path/to/your/shows`
+4. Uncomment the `mv` command in `videoResolutionRename.sh` on line 51 to allow renaming. **If the renaming process fails, your files may be lost. I recommend running the script without renaming first, and confirming that your output is as expected.**
+
+5. `./videoResolutionRename.sh /path/to/your/shows`
 
 To compare the old and new names:
 
